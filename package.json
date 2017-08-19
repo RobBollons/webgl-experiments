@@ -21,7 +21,7 @@
     },
     "scripts": {
         "build": "browserify -t glslify index.js > client/bundle.js",
-        "start": "budo regl/02-rotating-triangle/index.js -- -t glslify",
+        "start": "budo regl/03-rotating-cube/index.js -l --debug -- -t glslify",
         "flow": "flow"
     },
     "keywords": [],
