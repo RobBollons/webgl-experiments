@@ -6,7 +6,12 @@
     "dependencies": {
         "angle-normals": "^1.0.0",
         "baboon-image": "^2.1.0",
+        "dot-obj": "0.0.1",
         "gl-mat4": "^1.1.4",
+        "gl-vec3": "^1.0.3",
+        "glsl-inverse": "^1.0.0",
+        "glsl-transpose": "^1.0.0",
+        "parse-obj": "0.0.0",
         "parse-wavefront-obj": "^1.0.3",
         "regl": "^1.3.0",
         "regl-camera": "^2.1.1",
@@ -21,7 +26,7 @@
     },
     "scripts": {
         "build": "browserify -t glslify index.js > client/bundle.js",
-        "start": "budo regl/03-rotating-cube/index.js -l --debug -- -t glslify",
+        "start": "budo ./regl/per-vertex-lighting/index.js --l --debug -- -t glslify",
         "flow": "flow"
     },
     "keywords": [],
